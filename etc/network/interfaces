@@ -1,0 +1,15 @@
+auto lo
+iface lo inet loopback
+
+auto eth0
+# allow-hotplug eth0
+iface eth0 inet dhcp
+
+auto wlan0
+
+#what i added (just some wlano crap, change to your ip next to address!)
+iface wlan0 inet static
+  address 100.64.100.1
+  netmask 255.255.255.0
+#the crap to run nat (i added it)
+up iptables-restore < /etc/iptables.ipv4.nat
