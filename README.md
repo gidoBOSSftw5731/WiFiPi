@@ -1,4 +1,2 @@
 # WiFiPi
-config for rpi wifi.
-
-update
+Basic configuration for a raspberry pi WiFi access point.
