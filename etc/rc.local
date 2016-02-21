@@ -18,5 +18,5 @@ if [ "$_IP" ]; then
 fi
 
 exit 0
-#touch /etc/rebooter.sh & this is my code, it wont exsist here so i commented it out, touch if you must
+#touch /etc/rebooter.sh & ###this is my code, it wont exsist here so i commented it out, touch if you must
 touch /etc/init.d &
