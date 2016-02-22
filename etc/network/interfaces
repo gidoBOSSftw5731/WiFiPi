@@ -13,3 +13,7 @@ iface wlan0 inet static
   netmask 255.255.255.0
 #the crap to run nat (i added it)
 up iptables-restore < /etc/iptables.ipv4.nat
+#More Ipv6 crap
+iface wlan0 inet6 static
+  address 2606:700:e:31::1
+  netmask 64
